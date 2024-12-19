@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ThumbsUp, ThumbsDown, Share2, Flag } from "lucide-react";
 import VideoGrid from "@/components/VideoGrid";
 import { videos } from "@/constants/videos";
+import Header from "@/components/Header";
 
 
 
@@ -19,6 +20,8 @@ export default function WatchPage() {
 
 
     return (
+        <> 
+        <Header/>
         <div className="container mx-auto flex flex-col justify-center lg:flex-row gap-6">
             <div className="lg:w-2/3">
                 <div className="aspect-video bg-muted rounded-lg overflow-hidden">
@@ -83,6 +86,7 @@ export default function WatchPage() {
                 </div>
             </div>
         </div>
+        </>
     );
 
 }

@@ -33,7 +33,7 @@ export default function RootLayout({
             <aside className="w-64  hidden md:block">
               <Sidebar className="fixed top-0 bottom-0 left-0 w-64 border-r" />
             </aside>
-            <main className="flex-1 p-4 ">
+            <main className="flex flex-1 justify-center items-center p-1 md:p-4 ">
               {children}
             </main>
           </div>

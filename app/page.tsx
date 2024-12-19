@@ -1,17 +1,16 @@
 import VideoGrid from '@/components/VideoGrid';
-import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import ModeToggle from '@/components/mode-toggle';
+import Header from '@/components/Header';
 
 export default function Home() {
   return (
     <div className="container ">
+      <Header/>
       <Tabs defaultValue="all" className="w-full ">
        
-        <div className="flex items-center justify-between mb-6">
-        <div>
-          <ModeToggle/>
-        </div>
+        <div className="flex items-center justify-center mb-6">
+        
           <TabsList className="bg-muted/50">
             <TabsTrigger value="all">All</TabsTrigger>
             <TabsTrigger value="trending">Trending</TabsTrigger>
